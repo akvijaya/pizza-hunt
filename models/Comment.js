@@ -38,7 +38,7 @@ const CommentSchema = new Schema(
       required: true
     },
     commentBody: {
-      type: String.apply,
+      type: String,
       required: true
     },
     createdAt: {
