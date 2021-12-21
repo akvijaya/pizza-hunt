@@ -10,7 +10,7 @@ app.use(express.static('public'));
 
 
 
-mongoose.connect( 'mongodb://localhost/pizza-hunt', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/pizza-hunt', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
